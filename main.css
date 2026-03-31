@@ -1,14 +1,13 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff");
-    font-family: 'Forma';
+    src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.woff2") format("woff2");
+    font-family: 'Bricolage Grotesque';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: pink;
-    font-family: 'Forma';
+    font-family: 'Bricolage Grotesque', sans-serif;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -61,11 +60,13 @@ h3{
     animation: weightChange 7s infinite;
 }
 
+/* Full range of animation */
+
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 12, "wght" 200, "wdth" 75;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    50%{font-variation-settings: "opsz" 96, "wght" 800, "wdth" 100;
     }
 }
 /* animations for the variations section */
