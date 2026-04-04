@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: pink;
+    background-color: #4D6477;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 /* how the page wrapper will appear on mobile */
@@ -29,12 +29,11 @@ grid-template-areas:
 }
 
 #history {
-grid-area: h;
-background-color: lightcoral;
+grid-area: v;
 }
 
 #variations{
-grid-area: v;
+grid-area: h;
 }
 
 #alphabet {
@@ -43,13 +42,13 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(138, 21, 21);
+    background-color:#77A2AD;
     height:200px;
 }
 
 /* font styling area */
 h2{
-    color: firebrick;
+    color: #77A2AD;
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
 }
 
@@ -75,9 +74,9 @@ h3{
 }
 @keyframes weightVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 12, "wght" 200, "slnt" 0;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "opsz" 96, "wght" 900, "slnt" 0;
     }
 }
 /* where the animation is for the width change */
@@ -86,9 +85,21 @@ h3{
 }
 @keyframes widthVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 12, "wght" 200, "slnt" 0;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "opsz" 96, "wght" 900, "slnt" 0;
+    }
+}
+
+/* where the animation is for the width change */
+.size{
+    animation: sizeVariations 5s infinite;
+}
+@keyframes sizeVariations {
+    0%, 100%{
+        font-variation-settings: "opsz" 12, "wght" 400, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 96, "wght" 400, "slnt" 0;
     }
 }
 
