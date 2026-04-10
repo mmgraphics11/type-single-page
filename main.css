@@ -9,6 +9,34 @@
     background-color: #4D6477;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
+/* Bottom section image */
+.bottom-section-image {
+    width: 100vw;
+    height: auto;
+    margin-left: calc(-50vw + 50%);
+    display: block;
+}
+
+/* History background section */
+.history-background {
+    background-image: url("History Background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history-background h2 {
+    color: #273A4A;
+}
+
+.history-background p {
+    color: #273A4A;
+}
+
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     /* where to change the width of the columns on desktop view */
@@ -20,12 +48,13 @@
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 25px;
+grid-gap: 0;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
     "v h"
-    "a a";
+    "a b"
+    "x x";
 }
 
 #history {
@@ -39,6 +68,10 @@ grid-area: h;
 #alphabet {
 grid-area: a;
 }
+
+#Full-character-set {
+grid-area: x;
+margin-top: 0%;}
 }
 /* CSS for the footer */
 footer{
@@ -50,6 +83,19 @@ footer{
 h2{
     color: #77A2AD;
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url("Hero Section.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 606px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
 h3{
