@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem;
 }
 
 .history-background h2 {
@@ -35,6 +36,31 @@
 
 .history-background p {
     color: #273A4A;
+}
+
+.history-content {
+    flex: 1;
+}
+
+.axes-content {
+    margin-top: 2rem;
+}
+
+@media only screen and (min-width:800px){
+    .history-background {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+    }
+    
+    .history-content {
+        margin: 0;
+    }
+    
+    .axes-content {
+        margin-top: 0;
+    }
 }
 
 /* how the page wrapper will appear on mobile */
@@ -52,21 +78,11 @@ grid-gap: 0;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "v h"
-    "a b"
     "x x";
 }
 
-#history {
-grid-area: v;
-}
-
-#variations{
-grid-area: h;
-}
-
 #alphabet {
-grid-area: a;
+grid-area: x;
 }
 
 #Full-character-set {
@@ -151,7 +167,7 @@ h3{
 
 h5{
     font-size:40px;
-    color:blue;
+    color:#273A4A;
     margin:15px;
 }
 
