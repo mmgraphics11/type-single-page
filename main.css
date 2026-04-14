@@ -9,6 +9,9 @@
     background-color: #4D6477;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
+
+*{
+}
 /* Bottom section image */
 .bottom-section-image {
     width: 100vw;
@@ -277,6 +280,7 @@ h4{
     color: #273A4A;
     font-size: 3em;
     margin-bottom: 0;
+    margin-top: -90px;
     
 }
 h2{
