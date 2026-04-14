@@ -12,9 +12,22 @@
 /* Bottom section image */
 .bottom-section-image {
     width: 100vw;
-    height: auto;
+    height: 400px;
     margin-left: calc(-50vw + 50%);
-    display: block;
+    background-image: url("Bottom Section.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+}
+
+.bottom-section-image h5 {
+    color: #273A4A;
+    font-size: 40px;
+    margin: 0;
 }
 
 /* History background section */
@@ -32,18 +45,36 @@
 
 .history-background h2 {
     color: #273A4A;
+    margin-bottom: -1rem;
+    font-size: 50px;
 }
 
 .history-background p {
     color: #273A4A;
+    font-size: 1.3rem;
+    line-height: 2;
 }
 
 .history-content {
     flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(1rem * 1.5);
 }
 
 .axes-content {
-    margin-top: 2rem;
+    margin-top: -10rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    gap: calc(1rem * 1.5);
 }
 
 @media only screen and (min-width:800px){
@@ -92,12 +123,31 @@ margin-top: 0%;}
 /* CSS for the footer */
 footer{
     background-color:#77A2AD;
-    height:200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
 }
 
 /* font styling area */
 h2{
-    color: #77A2AD;
+    color: #12d0ff;
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
 }
 
@@ -199,5 +249,16 @@ h5{
     margin: 0;
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+h4{
+    color: #273A4A;
+    font-size: 3em;
+    margin-bottom: 0;
+    
+}
+h2{
+    color: #273A4A;
+    font-size: 2em;
+    margin-top: -2.5em;  
 }
 
