@@ -2,18 +2,20 @@
     src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.woff2") format("woff2");
     font-family: 'Bricolage Grotesque';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     }
     
     body{
     background-color: #4D6477;
     font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
 }
 
 *{
 }
 /* Bottom section image */
 .bottom-section-image {
+    position: relative;
     width: 100vw;
     height: 400px;
     margin-left: calc(-50vw + 50%);
@@ -33,6 +35,66 @@
     font-weight: 900;
     font-width: calc(100% - 2rem);
     margin: -70px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Numbers container */
+.character-set-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 10;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.lowercase-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lowercase-image {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+.numbers-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers-image {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+/* Uppercase container */
+.uppercase-container {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.uppercase-image {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
 }
 
 /* History background section */
@@ -61,16 +123,17 @@
 }
 
 .history-content {
-    flex: 1;
+    flex: -50%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     gap: calc(1rem * 1.5);
+    bottom: -50%;
 }
 
 .axes-content {
-    margin-top: -10rem;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -131,6 +194,13 @@ margin-top: 0%;}
     align-items: center;
     padding: 3rem 2rem;
     background-color: #4D6477;
+}
+
+.download-button-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .download-button {
@@ -280,7 +350,7 @@ h4{
     color: #273A4A;
     font-size: 3em;
     margin-bottom: 0;
-    margin-top: -90px;
+    margin-top: -100px;
     
 }
 h2{
